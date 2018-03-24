@@ -224,6 +224,10 @@ class User:
         return is_member
 
     def third_method(self):
+        """
+        Метод который определяет группы, в которых не состоит ни один из друзей пользователя
+        :return: Возвращает список групп в которых не состоин ни один из друзей пользователя
+        """
         user_id = self.__get_user_id()
         print(1)
         groups = self.__find_groups(user_id)
